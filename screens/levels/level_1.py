@@ -7,7 +7,7 @@ from ui.input_box import InputBox
 from config import screen
 
 
-def level1():
+def level1(score):
     # Load assets
     level1Title = font.render("Level 1", True, BLACK)  # Page Title
     background = pygame.image.load("assets/images/background.png").convert()
@@ -43,10 +43,11 @@ def level1():
 
                 print(f"User input: '{user_input}'")  # Debugging: Print the input
 
-                if user_input in correctQ1:
+                if user_input in correctQ1 and not is_correct:
                     feedback_text = "Correct!"
                     feedback_color = GREEN
                     is_correct = True
+                    score += 1
                 else:
                     feedback_text = "Incorrect!"
                     feedback_color = RED
@@ -78,6 +79,10 @@ def level1():
 
         # Draw the back button
         back_button.draw(screen)
+
+        #score display
+        score_surface = answerFont.render(f"Score: {score}", True, BLACK)
+        screen.blit(score_surface, (800, 70))
 
         # Update the display
         pygame.display.flip()

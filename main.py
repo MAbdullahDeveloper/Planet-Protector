@@ -2,6 +2,8 @@
 import pygame
 pygame.init()
 
+score = 0 
+
 
 #cbuttons
 from ui.back_button import BackButton
@@ -99,7 +101,7 @@ while running:
     elif game_state == SETTINGS:
         settings.draw(screen)
     elif game_state == LEVEL1:
-        result = level1()
+        result, score = level1(score)
         if result == "quit":
             running = False
         elif result == "PLAY":
