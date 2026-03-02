@@ -2,8 +2,6 @@
 import pygame
 pygame.init()
 
-score = 0 
-
 
 #cbuttons
 from ui.back_button import BackButton
