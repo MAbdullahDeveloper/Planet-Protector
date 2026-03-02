@@ -25,7 +25,6 @@ from screens.levels.level_4 import level4
 
 from config import MENU, PLAY, SETTINGS, LEVEL1, LEVEL2, LEVEL3, LEVEL4, LEVEL5, screen
 
-
 # game audio
 # pygame.mixer.music.load("assets/audio/Lobby-Time(chosic.com).mp3")
 
@@ -99,7 +98,7 @@ while running:
     elif game_state == SETTINGS:
         settings.draw(screen)
     elif game_state == LEVEL1:
-        result, score = level1(score)
+        result = level1()
         if result == "quit":
             running = False
         elif result == "PLAY":
