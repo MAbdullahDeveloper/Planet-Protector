@@ -1,11 +1,11 @@
 import pygame
 
-from config import font, smallFont, BLACK, GREEN, RED, answerFont
-from ui.back_button import BackButton
-from ui.hint_button import HintBox, HintButton
-from ui.input_box import InputBox
+from src.ui.back_button import BackButton
+from src.ui.hint_button import HintBox, HintButton
+from src.ui.input_box import InputBox
 from config import screen
-
+from src.utils.colors import BLACK, GREEN, RED
+from assets.fonts.font import font, smallFont, answerFont
 
 def level4():
     level4Title = font.render("Level 4", True, BLACK)  # Page Title

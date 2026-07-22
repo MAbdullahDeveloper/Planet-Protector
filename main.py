@@ -4,24 +4,24 @@ pygame.init()
 
 
 #cbuttons
-from ui.back_button import BackButton
+from src.ui.back_button import BackButton
 back_button = BackButton(10, 10)
 
-from ui.hint_button import HintBox, HintButton
+from src.ui.hint_button import HintBox, HintButton
 hint_button = HintButton(800, 10, 150, 50, "Hint")
 hint_box = HintBox(250, 450, 550, 100, (200, 200, 255), "")
 
-from ui.input_box import InputBox
+from src.ui.input_box import InputBox
 input_box = InputBox(370, 400, 200, 40)
 
-from screens.main_menu import MainMenu
-from screens.settings import Settings
-from screens.levels_page import Gameplay
+from src.screens.main_menu import MainMenu
+from src.screens.settings import Settings
+from src.screens.levels_page import Gameplay
 
-from screens.levels.level_1 import level1
-from screens.levels.level_2 import level2
-from screens.levels.level_3 import level3
-from screens.levels.level_4 import level4
+from src.levels.level_1 import level1
+from src.levels.level_2 import level2
+from src.levels.level_3 import level3
+from src.levels.level_4 import level4
 
 from config import MENU, PLAY, SETTINGS, LEVEL1, LEVEL2, LEVEL3, LEVEL4, LEVEL5, screen
 

@@ -4,18 +4,6 @@ import pygame
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
-# Colors
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GREEN = (0, 255, 0)
-GRAY = (200, 200, 200)
-RED = (255, 0, 0)
-
-# Fonts
-font = pygame.font.SysFont("{¡Estoy Bueno!}", 72)  # Original font
-smallFont = pygame.font.SysFont("{¡Estoy Bueno!}", 48)
-hoverFont = pygame.font.SysFont("{¡Estoy Bueno!}", 56)
-answerFont = pygame.font.SysFont("{¡Estoy Bueno!}", 30)
 
 # Game states
 MENU = "menu"

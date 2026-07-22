@@ -1,7 +1,10 @@
 import pygame
 
-from config import GREEN, BLACK, hoverFont, smallFont, MENU
-from ui.back_button import BackButton
+from config import MENU
+from src.ui.back_button import BackButton
+from assets.fonts.font import hoverFont, smallFont
+from src.utils.colors import GREEN, BLACK
+
 
 # Creating the settings
 class Settings:

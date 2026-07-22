@@ -1,0 +1,7 @@
+Docs folder is used to explain the project and code. #
+files it will eventually contain:
+architecture.md
+developemt log.md
+game design doc.md
+assesst.md
+screenshots/ 

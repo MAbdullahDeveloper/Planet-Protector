@@ -1,5 +1,6 @@
 import pygame
-from config import BLACK, GREEN, answerFont
+from src.utils.colors import BLACK, GREEN
+from assets.fonts.font import answerFont
 
 class InputBox:
     def __init__(self, x, y, width, height):
